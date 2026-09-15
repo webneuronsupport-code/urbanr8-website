@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.gemini/
+node_modules/
+*.zip
+temp_*/
+perfect_base/
+.claude/
+scratch/

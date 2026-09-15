@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Urban R8 | Inmobiliaria y Constructora en Guadalajara y Zapopan</title>
+    <meta name="description" content="Urban R8: Tu Inmobiliaria y Constructora de confianza en Av Aviación, Zapopan y Guadalajara (GDL). Compra, venta, renta y proyectos de construcción.">
+    <meta name="keywords" content="Inmobiliaria en Av Aviacion, Inmobiliaria en GDL, Inmobiliaria en Zapopan, bienes raices guadalajara, constructora zapopan, venta de casas, renta de propiedades, Urban R8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="urban-style-cinematic-final.css?v=2.7">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Urban R8 Inmobiliaria y Constructora",
+      "image": "https://urbanr8.com.mx/assets/LOGO%20URBAN%20PNG.png",
+      "telephone": "+523328418117",
+      "email": "contacto@urbanr8.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Base Aérea 879, El Triángulo",
+        "addressLocality": "Zapopan",
+        "addressRegion": "Jalisco",
+        "postalCode": "45200",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 20.7561,
+        "longitude": -103.4475
+      },
+      "url": "https://urbanr8.com.mx/",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/share/1S8vSSKaYX/?mibextid=wwXIfr",
+        "https://www.instagram.com/urbanr8",
+        "https://www.tiktok.com/@urban.r8"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="loader" class="loader">
+        <h2 class="loader-text">URBAN <span class="r8-gold">R8</span></h2>
+    </div>
+    <!-- Double-Tier Header -->
+    <header class="header site-header" id="header">
+    <!-- Top Tier (Contact & Logo) -->
+    <div class="header-top">
+        <div class="container header-top-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/LOGO URBAN PNG.png" alt="Urban R8" class="brand-logo">
+                </a>
+            </div>
+            <div class="header-contact-info">
+                <div class="social-icons">
+    <a href="https://wa.me/523328418117" target="_blank"><i class="ph ph-whatsapp-logo"></i></a>
+    <a href="https://www.facebook.com/share/1S8vSSKaYX/?mibextid=wwXIfr" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+    <a href="https://www.tiktok.com/@urban.r8?_r=1&_t=ZS-987Z3gZqnyv" target="_blank"><i class="ph ph-tiktok-logo"></i></a>
+    <a href="https://www.instagram.com/urbanr8" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+</div>
+                <div class="contact-details">
+                    <strong><i class="ph-fill ph-phone"></i> 33 28 41 81 17</strong>
+                    <span>contacto@urbanr8.com</span>
+                </div>
+            </div>
+            <!-- Menu Toggle on Mobile -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Bottom Tier (Navigation) -->
+    <div class="header-bottom">
+        <div class="container header-bottom-container">
+            <nav class="nav" id="nav-menu">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="#catalogo" class="nav-link">Propiedades</a>
+                <a href="publica.html" class="nav-link">Publica tu Propiedad</a>
+                <a href="construccion.html" class="nav-link">Construcción</a>
+                <a href="#contacto" class="nav-link">Contáctanos</a>
+                
+                <!-- Mobile Contact Footer (Visible only on mobile) -->
+                <div class="mobile-nav-footer">
+                    <div class="contact-details">
+                        <strong><i class="ph-fill ph-phone"></i> 33 28 41 81 17</strong>
+                        <span>contacto@urbanr8.com</span>
+                    </div>
+                    <div class="social-icons">
+    <a href="https://wa.me/523328418117" target="_blank"><i class="ph ph-whatsapp-logo"></i></a>
+    <a href="https://www.facebook.com/share/1S8vSSKaYX/?mibextid=wwXIfr" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+    <a href="https://www.tiktok.com/@urban.r8?_r=1&_t=ZS-987Z3gZqnyv" target="_blank"><i class="ph ph-tiktok-logo"></i></a>
+    <a href="https://www.instagram.com/urbanr8" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <!-- Cinematic Glassmorphism Hero -->
+        <section id="inicio" class="cinematic-hero">
+            <div class="cinematic-bg-wrapper">
+                <div class="cinematic-bg collage-bg">
+                      <!-- User's local images combined with Unsplash replacements -->
+                      <div class="collage-item" style="background-image: url('https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhc2FzfGVufDB8fDB8fHww'); background-position: center;"></div>
+                      <div class="collage-item" style="background-image: url('https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhc2FzfGVufDB8fDB8fHww'); background-position: center;"></div>
+                      <div class="collage-item" style="background-image: url('https://images.unsplash.com/photo-1628012209120-d9db7abf7eab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGNhc2FzfGVufDB8&cb=2'); background-position: center;"></div>
+                      <div class="collage-item" style="background-image: url('assets/WhatsApp Image 2026-07-16 at 1.46.4erte9 PM.jpeg'); background-position: center;"></div>
+                      <div class="collage-item" style="background-image: url('https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxjYXNhc3xlbnwwfHwwfHx8MA%3D%3D&cb=3'); background-position: center;"></div>
+                      <div class="collage-item" style="background-image: url('assets/WhatsApp Image 2026-07-16 at 1.4tg6.49 PM.jpeg'); background-position: center;"></div>
+                  </div>
+            </div>
+            
+            <!-- Overlay for text readability (Fixed relative to hero) -->
+            <div class="collage-overlay"></div>
+            
+            <div class="container cinematic-container">
+                <div class="cinematic-content text-center">
+                    <div class="cinematic-badge">
+                        <span class="badge-dot"></span> EXCLUSIVIDAD EN BIENES RAÍCES
+                    </div>
+                    <h1 class="cinematic-title">URBAN <span class="r8-gold">R8</span></h1>
+                    <p class="cinematic-subtitle">Encuentra tu nueva casa para comprar o rentar.</p>
+                </div>
+
+                <!-- Glassmorphism Search Panel -->
+                <div class="glass-search-panel">
+                    <div class="glass-search-grid">
+                        <div class="glass-form-group">
+                            <label>Operación</label>
+                            <select id="filter-type">
+                                <option value="all">Todas</option>
+                                <option value="venta">Venta</option>
+                                <option value="renta">Renta</option>
+                            </select>
+                        </div>
+                        
+                        <div class="glass-form-group">
+                            <label>Ubicación</label>
+                            <select id="filter-zone">
+                                <option value="all">Todas las zonas</option>
+                                <option value="zapopan">Zapopan</option>
+                                <option value="guadalajara">Guadalajara</option>
+                                <option value="tlajomulco">Tlajomulco</option>
+                                <option value="santa anita">Santa Anita</option>
+                                <option value="el salto">El Salto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="glass-form-group">
+                            <label>Presupuesto</label>
+                            <select id="filter-price">
+                                <option value="all">Sin límite</option>
+                                <option value="range-1">Menos de $1 Millón</option>
+                                <option value="range-2">De $1 a $3 Millones</option>
+                                <option value="range-3">De $3 a $6 Millones</option>
+                                <option value="range-4">De $6 a $10 Millones</option>
+                                <option value="range-5">Más de $10 Millones</option>
+                            </select>
+                        </div>
+
+                        <button class="glass-search-btn" onclick="document.getElementById('catalogo').scrollIntoView({behavior: 'smooth'})">
+                            Buscar <i class="ph-bold ph-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Catalog Section -->
+        <section id="catalogo" class="catalog-section section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Propiedades Exclusivas</h2>
+                    <p class="section-subtitle">Encuentra tu próximo hogar o inversión ideal con nuestro buscador inteligente.</p>
+                </div>
+
+
+
+                <!-- Properties Grid Carousel Wrapper -->
+                <div class="properties-carousel-wrapper" style="position: relative;">
+                    <div class="swipe-indicator"><i class="ph ph-hand-swipe-left"></i> Desliza</div>
+                    <button id="grid-prev" class="grid-nav prev"><i class="ph ph-caret-left"></i></button>
+                    <div id="properties-grid" class="properties-grid">
+                        <!-- Cards will be injected by JavaScript -->
+                    </div>
+                    <button id="grid-next" class="grid-nav next"><i class="ph ph-caret-right"></i></button>
+                </div>
+                
+                <!-- No Results Message (Hidden by default) -->
+                <div id="no-results" class="no-results hidden">
+                    <i class="ph ph-house-line"></i>
+                    <h3>No encontramos coincidencias exactas</h3>
+                    <p>Pero tenemos opciones exclusivas fuera del catálogo. ¡Contáctanos y la encontraremos por ti!</p>
+                    <a href="#contacto" class="btn-primary">Hablar con un asesor</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="ubicacion" class="location-section">
+            <div class="location-map" style="background-image: none; background-color: #0f1013;">
+                <iframe src="https://maps.google.com/maps?q=Av.%20Base%20A%C3%A9rea%20879,%20El%20Tri%C3%A1ngulo,%2045200%20Zapopan,%20Jal.&t=m&z=16&output=embed" width="100%" height="100%" style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location-content">
+                <h2 class="section-title" style="-webkit-text-fill-color: var(--text-main); background: none;">UBICACIÓN</h2>
+                <p class="location-address">Av. Base Aérea 879, El Triángulo,<br>45200 Zapopan, Jal.</p>
+                
+                <div class="location-apps">
+                    <p>Ver en:</p>
+                    <div class="apps-links">
+                        <a href="https://waze.com/ul" target="_blank" class="app-btn">
+                            <i class="ph-fill ph-navigation-arrow"></i> Waze
+                        </a>
+                        <a href="https://maps.google.com/?q=Av.+Base+Aerea+879,+Zapopan" target="_blank" class="app-btn">
+                            <i class="ph-fill ph-map-pin"></i> Google Maps
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="#contacto" class="btn-primary mt-4" style="max-width: 300px;">Conoce más del proyecto</a>
+            </div>
+        </section>
+
+        <!-- CTA Divider -->
+        <section class="cta-divider">
+            <div class="container text-center">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Déjanos ayudarte a construirlo con la máxima calidad y eficiencia.</p>
+                <a href="#contacto" class="btn-primary mt-4">Hablar con un experto</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="section-title">Contáctanos</h2>
+                        <p class="section-subtitle">Ponte en contacto para una asesoría personalizada y cotización sin compromiso. ¡Estamos listos para empezar!</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="icon"><i class="ph ph-map-pin"></i></div>
+                                <div>
+                                    <h4>Visítanos</h4>
+                                    <p>Av. Base Aérea no. 879, Zapopan, Jalisco.</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon"><i class="ph ph-phone"></i></div>
+                                <div>
+                                    <h4>Llámanos</h4>
+                                    <p>33 10 06 90 34 | 33 45 33 53 04</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon"><i class="ph ph-envelope"></i></div>
+                                <div>
+                                    <h4>Escríbenos</h4>
+                                    <p>urbanr8@outlook.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+    <h4>S&iacute;guenos en redes</h4>
+    <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="https://wa.me/523328418117" target="_blank" class="social-btn">
+            <i class="ph ph-whatsapp-logo"></i> WhatsApp
+        </a>
+        <a href="https://www.facebook.com/share/1S8vSSKaYX/?mibextid=wwXIfr" target="_blank" class="social-btn">
+            <i class="ph ph-facebook-logo"></i> Urban R8
+        </a>
+        <a href="https://www.tiktok.com/@urban.r8?_r=1&_t=ZS-987Z3gZqnyv" target="_blank" class="social-btn">
+            <i class="ph ph-tiktok-logo"></i> @urban.r8
+        </a>
+        <a href="https://www.instagram.com/urbanr8" target="_blank" class="social-btn">
+            <i class="ph ph-instagram-logo"></i> @urbanr8
+        </a>
+    </div>
+</div>
+                      </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <h3>Envíanos un mensaje</h3>
+                            <div class="form-group">
+                                <label for="name">Nombre completo *</label>
+                                <input type="text" id="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono / WhatsApp *</label>
+                                <input type="tel" id="phone" placeholder="Tu teléfono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico *</label>
+                                <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Servicio de interés *</label>
+                                <select id="service" required>
+                                    <option value="" disabled selected>Selecciona un servicio...</option>
+                                    <option value="comprar">Comprar Propiedad</option>
+                                    <option value="vender">Vender mi Propiedad</option>
+                                    <option value="rentar">Rentar Propiedad</option>
+                                    <option value="construccion">Construcción y Remodelación</option>
+                                    <option value="tablaroca_carpinteria">Tablaroca y Carpintería</option>
+                                    <option value="arquitectura">Diseño Arquitectónico</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje (Opcional)</label>
+                                <textarea id="message" rows="4" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">Enviar Cotización</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/LOGO URBAN PNG.png" alt="Urban R8" class="brand-logo">
+                    </a>
+                </div>
+                    <p>Inmobiliaria y Constructora. Hacemos que tus sueños sucedan con calidad y excelencia.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                                                <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="aviso-privacidad.html">Aviso de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><i class="ph-fill ph-whatsapp-logo"></i> 33 28 41 81 17</li>
+                        <li><i class="ph-fill ph-map-pin"></i> Av. Base Aérea 879, El Triángulo, Zapopan</li>
+                        <li><i class="ph-fill ph-clock"></i> Lunes a Viernes de 10 am a 6 pm</li>
+                        <li><i class="ph-fill ph-envelope"></i> contacto@urbanr8.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Urban R8. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="main.js?v=2.4"></script>
+
+    <!-- Chatwoot Widget -->
+    <script>
+      window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
+      (function(d,t) {
+        var BASE_URL="https://orion.webneuron.com.mx";
+        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=BASE_URL+"/packs/js/sdk.js";
+        g.async = true;
+        s.parentNode.insertBefore(g,s);
+        g.onload=function(){
+          window.chatwootSDK.run({
+            websiteToken: 'dKUtPiatQvm2UQ2MgYPj4iHT',
+            baseUrl: BASE_URL
+          })
+        }
+      })(document,"script");
+    </script>
+
+    <!-- Property Details Modal -->
+    <div id="property-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close-btn"><i class="ph ph-x"></i></button>
+            <div class="modal-scroll-indicator hidden"><i class="ph ph-caret-down"></i> Desliza para más info</div>
+            <div class="modal-layout">
+                <!-- Left: Image Carousel -->
+                <div class="modal-carousel-section">
+                    <div id="modal-carousel-image" class="carousel-image"></div>
+                    <button class="carousel-nav prev" id="carousel-prev"><i class="ph ph-caret-left"></i></button>
+                    <button class="carousel-nav next" id="carousel-next"><i class="ph ph-caret-right"></i></button>
+                    <div class="carousel-indicators" id="carousel-indicators">
+                        <!-- Dots will be injected by JS -->
+                    </div>
+                </div>
+                
+                <!-- Right: Property Info -->
+                <div class="modal-info-section">
+                    <div class="modal-header">
+                        <span id="modal-tipo" class="property-zone-badge" style="position:relative; top: 0; left: 0; margin-bottom:10px; display:inline-block;">Venta</span>
+                        <span id="modal-estatus" class="property-zone-badge" style="position:relative; top: 0; left: 0; margin-bottom:10px; display:inline-block; margin-left: 8px;">Disponible</span>
+                        <h2 id="modal-title">Título de la Propiedad</h2>
+                        <div class="modal-location"><i class="ph ph-map-pin"></i> <span id="modal-colonia">Colonia</span>, <span id="modal-zone">Zona</span></div>
+                        <div id="modal-price" class="modal-price">$0.00</div>
+                    </div>
+                    
+                    <div class="modal-specs">
+                        <div class="spec-item"><i class="ph ph-bed"></i> <span id="modal-beds">0</span> recámaras</div>
+                        <div class="spec-item"><i class="ph ph-shower"></i> <span id="modal-baths">0</span> baños</div>
+                        <div class="spec-item"><i class="ph ph-car"></i> <span id="modal-parking">0</span> estac.</div>
+                        <div class="spec-item"><i class="ph ph-square-split-horizontal"></i> <span id="modal-m2t">0</span> m² terreno</div>
+                        <div class="spec-item"><i class="ph ph-house"></i> <span id="modal-m2c">0</span> m² constr.</div>
+                    </div>
+
+                    <div class="modal-description">
+                        <h3>Descripción</h3>
+                        <p id="modal-desc-text">Descripción no disponible.</p>
+                    </div>
+
+                    <div class="modal-amenities">
+                        <h3>Amenidades</h3>
+                        <ul id="modal-amenities-list">
+                            <!-- Li elements injected by JS -->
+                        </ul>
+                        <div id="modal-location-container" style="display: none; margin-top: 15px;">
+                            <a id="modal-location-link" href="javascript:void(0)" target="_blank" style="color: #d1b463; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; font-weight: 500;">
+                                📍 Ver Ubicación
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer" id="modal-form-container" style="background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin-top: 20px;">
+                        <h3 style="margin-bottom: 15px; color: var(--accent); font-size: 1.1rem;"><i class="ph ph-envelope-simple"></i> Me interesa esta propiedad</h3>
+                        <form id="modal-interest-form" style="display: flex; flex-direction: column; gap: 12px;">
+                            <input type="hidden" id="modal-input-id">
+                            <input type="hidden" id="modal-input-title">
+                            <input type="hidden" id="modal-input-price">
+                            <input type="hidden" id="modal-input-photo">
+                            
+                            <input type="text" id="modal-input-name" placeholder="Tu Nombre Completo *" required style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(0,0,0,0.2); color: #fff; width: 100%; box-sizing: border-box; font-family: inherit;">
+                            <input type="tel" id="modal-input-phone" placeholder="Tu Teléfono / WhatsApp *" required style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(0,0,0,0.2); color: #fff; width: 100%; box-sizing: border-box; font-family: inherit;">
+                            <input type="email" id="modal-input-email" placeholder="Tu Correo Electrónico *" required style="padding: 12px; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; background: rgba(0,0,0,0.2); color: #fff; width: 100%; box-sizing: border-box; font-family: inherit;">
+                            
+                            <button type="submit" id="modal-submit-btn" class="btn-primary" style="width: 100%; text-align: center; border: none; cursor: pointer; margin-top: 5px; font-size: 1rem; padding: 12px; border-radius: 8px; transition: all 0.3s ease;">Enviar Información</button>
+                            <p id="modal-form-msg" style="display: none; margin-top: 10px; font-size: 0.9rem; text-align: center; font-weight: 500;"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/523328418117?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20proyectos%20y%20servicios%20de%20Urban%20R8." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="ph-fill ph-whatsapp-logo"></i>
+    </a>
+</body>
+</html>

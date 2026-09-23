@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Top Tier */
 .header-top {
     background-color: rgba(42, 42, 43, 0.95);
-    height: 64px;
+    height: 72px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(255,255,255,0.05);
@@ -2722,7 +2722,7 @@ html.no-scroll, body.no-scroll { overflow: hidden !important; height: 100%; touc
 .step { padding: 26px 20px 26px 0; border-right: 1px solid var(--border-color); }
 .step:last-child { border-right: none; }
 @media(max-width: 800px) { .step:nth-child(2n) { border-right: none; } .step { border-bottom: 1px solid var(--border-color); } }
-.step-num { font-size: 32px; color: var(--primary-gold); opacity: .55; margin-bottom: 10px; font-weight: 500; }
+.step-num { font-size: 40px; color: var(--primary-gold); opacity: .55; margin-bottom: 10px; font-weight: 500; }
 .step h3 { font-size: 16px; margin-bottom: 6px; color: #fff; }
 .step p { font-size: 13.8px; color: var(--text-muted); }
 
@@ -2964,15 +2964,15 @@ html.no-scroll, body.no-scroll { overflow: hidden !important; height: 100%; touc
 /* WhatsApp Floating Button - Premium Green Design */
 .whatsapp-float {
     position: fixed;
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
     bottom: 20px;
     right: 90px;
     background: linear-gradient(135deg, #25D366, #128C7E);
     color: #FFF;
     border-radius: 50%;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4), 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     display: flex;

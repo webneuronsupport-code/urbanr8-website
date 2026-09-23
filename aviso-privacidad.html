@@ -267,5 +267,24 @@
     <a href="https://wa.me/5213330157527?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20proyectos%20y%20servicios%20de%20Urban%20R8." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
+
+<!-- Chatwoot Widget -->
+<script>
+  window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
+  (function(d,t) {
+    var BASE_URL="https://crm.urbanr8.com.mx";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'KPjV3uhAnkjFtgJ6rRkvyZBF',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+
 </body>
 </html>
